@@ -26,12 +26,14 @@ let cup = 'plastic cup';
 let water = 'ice cubes';
 let iceCubesColunt = 3;
 let price = 0;
-let coffeType = 'Bumble';  //cappuccino, bumble, filterCoffee
+let coffeType = 'cappuccino';  //cappuccino, bumble, filterCoffee
 let coffee = 'coffee'
 let juice = 'orange';
 let topic = 'caramel syrup';
 let straw = 'straw'; //трубочка
 
+if(coffeType == 'Bumble')
+{
 if (cupSize == 'small'){
     price = 100
 }
@@ -40,6 +42,20 @@ else if( cupSize == 'middle'){
 }
 else if(cupSize == 'large'){
     price = 250
+}
+}
+
+else if(coffeType == 'cappuccino'){
+    if (cupSize == 'small'){
+        price = 50
+    }
+    else if( cupSize == 'middle'){
+        price = 110
+    }
+    else if(cupSize == 'large'){
+        price = 160
+    }
+    
 }
 
 console.log(`You chooced ${coffeType} coffee`)
@@ -67,3 +83,14 @@ console.log(step1 + "\n"
 
           
 
+// Внедрите в свой код про кофе цикл, там, где это может понадобиться.
+// Добавьте комментарии в код с пояснениями изменений, зачем они нужны.
+
+// Продумайте на будущее план развития своего кода с кофе, 
+//где в реальной жизни он мог бы быть использован. 
+//Начните создавать мини-документацию к своему проекту. 
+//Пропишите требования так, как вы хотели бы их видеть на своем проекте 
+///и чтобы посторонний человек мог в них разобраться.
+// Скорее всего, что-то придется добавить или изменить позже.
+// Очень полезно, если вы сможете работать парами и проверять друг у друга.
+//  (это вам поможет впоследствии писать тест кейсы, тестировать документацию и требования)
